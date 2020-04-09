@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
 namespace MvcMovie.Models
@@ -9,8 +10,10 @@ namespace MvcMovie.Models
         public string Title { get; set; }
 
         [DataType(DataType.Date)]
+        [DisplayName("Welease Woderwick")]
         public DateTime ReleaseDate { get; set; }
         public string Genre { get; set; }
         public decimal Price { get; set; }
+        public string Rating { get; set; }
     }
 }
